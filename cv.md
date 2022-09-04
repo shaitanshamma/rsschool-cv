@@ -78,4 +78,24 @@ function checkDuplicate($list)
 }
 
 ```
+___
 
+## Projects:
+
+* [Basic e-shop ](https://github.com/shaitanshamma/myAwesomeShop);
+* [Laravel project ](https://github.com/shaitanshamma/Laravel);
+* [Team project ](https://github.com/shaitanshamma/shelter-dom).
+
+___
+
+## Education:
+
+* Moscow Aviation Institute (National Research University);
+* Geekbrains University - Java Developer;
+* Geekbrains University - Web Developer - present time;
+
+___
+
+## English:
+
+* A1 Elementary
