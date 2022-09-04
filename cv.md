@@ -24,3 +24,58 @@ I am studying frontend and backend programming. I had a little practice working 
 * __Js, HTML, CSS__;
 * __JavaCore & Spring__;
 * __Git__.
+
+---
+
+## Code example:
+
+```
+function sortByThanos(array $mas): array
+{
+    $arrCount = count($mas);
+
+    if ($arrCount <= 1) {
+        return $mas;
+    }
+    if (!checkDuplicate($mas)) {
+        $sum = 0;
+        for ($j = 0; $j < $arrCount; $j++) {
+            $sum += $mas[$j];
+        }
+        $midle = $sum / $arrCount;
+        $left = [];
+        $right = [];
+        for ($i = 0; $i < $arrCount; $i++) {
+            if ($mas[$i] <= $midle) {
+                $left[] = $mas[$i];
+                $GLOBALS['count']++;
+            } else {
+                $right[] = $mas[$i];
+                $GLOBALS['count']++;
+            }
+        }
+
+        $left = sortByThanos($left);
+        $right = sortByThanos($right);
+
+        return array_merge($left, $right);
+    } else return $mas;
+}
+
+function checkDuplicate($list)
+{
+    $tmp = 1;
+    $arrCount = count($list);
+    for ($i = 1; $i < $arrCount; $i++) {
+        if ($list[$i] === $list[0]) {
+            $tmp++;
+            $GLOBALS['count']++;
+        }
+    }
+    if ($tmp < $arrCount) {
+        return false;
+    } else return true;
+}
+
+```
+
