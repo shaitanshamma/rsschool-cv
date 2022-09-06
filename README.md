@@ -1,3 +1,3 @@
 # rsschool-cv
 
-# https://shaitanshamma.github.io/rsschool-cv/cv
+# https://shaitanshamma.github.io/rsschool-cv/
